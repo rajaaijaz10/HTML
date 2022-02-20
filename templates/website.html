@@ -1,0 +1,153 @@
+<!doctype html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+
+        <title>Blank template</title>
+
+        <!-- Load external CSS styles -->
+        <link rel="stylesheet" href="styles.css">
+        <style>
+            .header {
+  padding: 8px; /* some padding */
+  text-align: center; /* center the text */
+  background: #1abc9c; /* green background */
+  color: white; /* white text color */
+}
+.header h1 {
+  font-size: 5vw;
+}
+.header p {
+  font-size: 2vw;
+}
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden; /* Hide overflow */
+  background-color: #333; /* Dark background color */
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left; /* Make sure that the links stay side-by-side */
+  display: block; /* Change the display to block, for responsive reasons (see below) */
+  color: white; /* White text color */
+  text-align: center; /* Center the text */
+  padding: 4px 10px; /* Add some padding */
+  text-decoration: none; /* Remove underline */
+}
+.side a {
+  float: right; /* Make sure that the links stay side-by-side */
+  display: flex; /* Change the display to block, for responsive reasons (see below) */
+  color: white; /* White text color */
+  text-align:end; /* Center the text */
+  padding: 4px 10px; /* Add some padding */
+  text-decoration: none; /* Remove underline */
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right; /* Float a link to the right */
+}
+
+
+/* Ensure proper sizing */
+* {
+  box-sizing: border-box;
+}
+/* Column container */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 30%; /* Set the width of the sidebar */
+  background-color: #8111f1; /* Grey background color */
+  padding: 20px; /* Some padding */
+}
+
+/* Main column */
+.main {
+  flex: 70%; /* Set the width of the main content */
+  background-color: #298; /* White background color */
+  padding: 20px; /* Some padding */
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+    .header h1 {
+  font-size: 7vw;
+}
+.header p {
+  font-size: 4vw;
+}
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+
+.footer {
+  padding: 20px; /* Some padding */
+  text-align: center; /* Center text*/
+  background: #ddd; /* Grey background */
+}
+
+            </style>
+
+    </head>
+
+    <body>
+        <div class="header">
+            <h1> MCQ's Today </h1>
+            <p>Get ready for exams.</p>
+        </div>
+        <div class="navbar">
+           
+            <a href="#">Home</a>
+            <a href="#">About us</a>
+            <a href="#">Contact us</a>
+            <a href="#" class="right">Login</a>
+
+        
+        </div>
+        <div class="row">
+            <div class="side">
+              <ul>
+                <li><a href="#home">Indian History</a></li>
+                <li><a href="#news">Geography</a></li>
+                <li><a href="#contact">Indian Polity</a></li>
+                <li><a href="#about">Economics</a></li>
+                <li><a href="#about">EVS</a></li>
+                <li><a href="#about">English</a></li>
+              </ul>
+
+
+
+            </div>
+            <div class="main">main</div>
+        </div>
+        <div class="footer">
+  <h2>Footer</h2>
+</div>
+
+    
+    
+
+       
+        
+        <!-- Load external JavaScript -->
+        <script src="scripts.js"></script>
+        
+    </body>
+
+</html>
